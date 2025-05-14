@@ -1,12 +1,12 @@
 version: '3.7'
 services:
   backend:
-    build: ./backend
+    build: ./BackEnd
     ports:
       - "5000:5000"
 
   frontend:
-    build: ./frontend
+    build: ./FrontEnd
     ports:
       - "4200:4200"
     depends_on:

@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   message = '';
-
+  title = "chiappe";
   constructor(private http: HttpClient) {
     this.http.get<any>('https://5000-maghrebo-dockerpreparaz-ggr28qpgkxq.ws-eu118.gitpod.io/api/data').subscribe(data => {
       this.message = data.message;
